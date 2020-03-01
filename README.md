@@ -19,17 +19,25 @@ After analysing them, a new dataset has been prepared as follow:
 ones, when available, as it was not possible to do the calculation for empty mask. So when not available, the provided values has been used
 - Age missing values have been replaces by 0
 
+See Data Preparation.ipynb 
+
 
 ## Feature selections
 Feature selection has been done in R using the glmnet library. 
 A cross validation has been performed, leaving R trying several lambdas
 A final model has been trained with the min of lambda + 1 standard error.
 
+See FeatureSelectionLasso.ipynb
+
 ## Cox model
-A cox model has been trained using the features selected in R, with an addiotional ridge parameter has been used to avoid overfitting
+A cox model has been trained using the features selected in R, with an addiotional ridge parameter has been used to avoid overfitting.
+
+See CoxModel.ipynb 
 
 ## Random Forest
 A random forest has been tried on the data.
+
+See Random Forest.ipynb
 
 ## Conclusion and next steps
 Higher score: 0.7255 obtained with the Cox Model.
