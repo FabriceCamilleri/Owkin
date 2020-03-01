@@ -28,12 +28,16 @@ A final model has been trained with the min of lambda + 1 standard error.
 ## Cox model
 A cox model has been trained using the features selected in R, with an addiotional ridge parameter has been used to avoid overfitting
 
+## Random Forest
+A random forest has been tried on the data.
 
 ## Conclusion and next steps
-Higher score: 07255
+Higher score: 0.7255 obtained with the Cox Model.
+
 As next steps, we could:
 - impute age missing values differently, for example by trying to cluser the obervations and compute a mean per cluster
-- try to calculate all radiomics features 
+- try to use all radiomics features 
 - ask expert about the missing masks for some scans
+- investigate more on the Random Forest
 
 
